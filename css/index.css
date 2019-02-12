@@ -150,3 +150,8 @@ body {
   padding: 0px 15px;
   border: 1px solid black;
 }
+.container-HEADER img {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
