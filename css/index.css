@@ -134,12 +134,15 @@ table {
   border-spacing: 0;
 }
 /* Your Code Goes Here */
-body {
-  background-color: red;
+@media (max-width: 1000px) {
+  body {
+    background-color: blue;
+  }
 }
-.container-MAIN {
-  width: 800px;
-  margin: 0 auto;
+@media (max-width: 500px) {
+  body {
+    background-color: red;
+  }
 }
 .container-NAV {
   display: flex;
