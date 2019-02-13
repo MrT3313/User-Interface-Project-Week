@@ -134,15 +134,25 @@ table {
   border-spacing: 0;
 }
 /* Your Code Goes Here */
-@media (max-width: 1000px) {
+@media (max-width: 2000px) {
   body {
     background-color: blue;
+  }
+  .container-MAIN {
+    max-width: 800px;
+    margin: 0 auto;
   }
 }
 @media (max-width: 500px) {
   body {
     background-color: red;
   }
+}
+.container-SUB {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 25px;
 }
 .container-NAV {
   display: flex;
@@ -157,4 +167,34 @@ table {
   display: flex;
   width: 100%;
   height: auto;
+}
+.container-CONTENT-A {
+  display: flex;
+}
+.container-CONTENT-A .content-1,
+.container-CONTENT-A .content-2 {
+  display: flex;
+}
+.container-CONTENT-A .content-1 img,
+.container-CONTENT-A .content-2 img {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+.container-CONTENT-A .content-1 {
+  padding: 10px 0px;
+}
+@media (max-width: 2000px) {
+  .content-1,
+  .content-2 {
+    width: 45%;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 500px) {
+  .content-1,
+  .content-2 {
+    width: 100%;
+    flex-direction: column-reverse;
+  }
 }

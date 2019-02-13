@@ -1,0 +1,36 @@
+.container-CONTENT-A {
+    display: flex; 
+    
+    .content-1, .content-2 {
+        display: flex;
+
+        img {
+            display: flex;
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .content-1 {
+        padding: 10px 0px;
+    }
+}
+
+// --MEDIA QUERIES-- //
+@media (max-width: 2000px) {
+
+    .content-1, .content-2 {
+        width: 45%;
+        justify-content: space-between;
+    }  
+    
+}
+
+@media (max-width: 500px) {
+
+    .content-1, .content-2 {
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+
+}

@@ -62,24 +62,33 @@ table{
 
 // --MEDIA QUERIES-- //
 
-@media (max-width: 1000px) {
+@media (max-width: 2000px) {
   body {
     background-color: blue;
   }
-  
+
+  .container-MAIN {
+    max-width: 800px;
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 500px) {
   body {
     background-color: red;
   }
-
 }
 
+.container-SUB {
+  display: flex;
+  
+  width: 80%;
+  margin: 0 auto;
 
-
-
+  margin-top: 25px;
+}
 
 // --IMPORT LESS FILES-- //
 @import "nav.less";
 @import "header.less";
+@import "contentA.less";
