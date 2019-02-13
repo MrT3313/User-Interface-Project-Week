@@ -253,3 +253,12 @@ table {
   width: 80%;
   border: 1px solid black;
 }
+footer {
+  background-color: yellow;
+  display: flex;
+}
+@media (max-width: 500px) {
+  footer {
+    flex-direction: column;
+  }
+}
