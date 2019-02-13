@@ -134,6 +134,16 @@ table {
   border-spacing: 0;
 }
 /* Your Code Goes Here */
+.container-SUB {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 25px;
+}
+.reversed {
+  flex-direction: row-reverse;
+}
 @media (max-width: 2000px) {
   body {
     background-color: blue;
@@ -148,12 +158,6 @@ table {
     background-color: red;
   }
 }
-.container-SUB {
-  display: flex;
-  width: 80%;
-  margin: 0 auto;
-  margin-top: 25px;
-}
 .container-NAV {
   display: flex;
   flex-direction: row;
@@ -167,12 +171,6 @@ table {
   display: flex;
   width: 100%;
   height: auto;
-}
-.container-SUB {
-  flex-direction: column;
-}
-.reversed {
-  flex-direction: row-reverse;
 }
 .container-CONTENT-A {
   display: flex;
@@ -233,4 +231,25 @@ table {
   .content-1 .button {
     width: 100%;
   }
+}
+.container-CONTENT-B {
+  display: flex;
+  flex-direction: column;
+  background-color: orange;
+}
+.Bsub-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Bsub-content img {
+  width: 100%;
+}
+.Bsub-content .imgTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 80%;
+  border: 1px solid black;
 }

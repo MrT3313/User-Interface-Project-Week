@@ -59,9 +59,21 @@ table{
 
 /* Your Code Goes Here */
 
+.container-SUB {
+  display: flex;
+  flex-direction: column;
+  
+  width: 80%;
+  margin: 0 auto;
+
+  margin-top: 25px;
+}
+
+.reversed {
+  flex-direction: row-reverse;
+}
 
 // --MEDIA QUERIES-- //
-
 @media (max-width: 2000px) {
   body {
     background-color: blue;
@@ -79,16 +91,8 @@ table{
   }
 }
 
-.container-SUB {
-  display: flex;
-  
-  width: 80%;
-  margin: 0 auto;
-
-  margin-top: 25px;
-}
-
 // --IMPORT LESS FILES-- //
 @import "nav.less";
 @import "header.less";
 @import "contentA.less";
+@import "contentB.less";
