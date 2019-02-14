@@ -149,7 +149,7 @@ body h2 {
 .container-SUB {
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   margin-top: 25px;
 }
@@ -160,6 +160,12 @@ body h2 {
   .container-MAIN {
     max-width: 800px;
     margin: 0 auto;
+  }
+  .container-CONTENT-A {
+    margin-bottom: 25px;
+  }
+  .reversed {
+    margin-top: 25px;
   }
 }
 @media (max-width: 500px) {
@@ -196,35 +202,34 @@ body h2 {
   position: absolute;
   bottom: 30px;
   left: 30px;
+  line-height: 40px;
 }
 .container-CONTENT-A {
   display: flex;
 }
-.container-CONTENT-A .content-1,
-.container-CONTENT-A .content-2 {
+.container-CONTENT-A .content-text,
+.container-CONTENT-A .content-img {
   display: flex;
 }
-.container-CONTENT-A .content-1 img,
-.container-CONTENT-A .content-2 img {
+.container-CONTENT-A .content-text img,
+.container-CONTENT-A .content-img img {
   display: flex;
   width: 100%;
   height: auto;
 }
-.container-CONTENT-A .content-1 {
+.container-CONTENT-A .content-text {
   flex-direction: column;
 }
-.container-CONTENT-A .content-1 h2 {
-  display: flex;
-  text-align: center;
-  margin: 10px 0px;
-}
-.container-CONTENT-A .content-1 p {
+.container-CONTENT-A .content-text h2 {
   display: flex;
 }
-.container-CONTENT-A .content-1 .button {
+.container-CONTENT-A .content-text p {
+  display: flex;
+  margin: 20px 0px;
+}
+.container-CONTENT-A .content-text .button {
   display: flex;
   text-align: center;
-  margin: 10px 0px;
   padding: 10px 0px;
   border: 1px solid #222222;
 }
@@ -232,14 +237,14 @@ body h2 {
   .container-CONTENT-A {
     justify-content: space-between;
   }
-  .content-1,
-  .content-2 {
-    width: 45%;
+  .content-text,
+  .content-img {
+    width: 48%;
   }
-  .content-1 {
+  .content-text {
     justify-content: center;
   }
-  .content-1 .button {
+  .content-text .button {
     width: 50%;
     justify-content: center;
   }
@@ -249,11 +254,11 @@ body h2 {
     justify-content: space-between;
     flex-direction: column-reverse;
   }
-  .content-1,
-  .content-2 {
+  .content-text,
+  .content-img {
     width: 100%;
   }
-  .content-1 .button {
+  .content-text .button {
     width: 100%;
   }
 }
@@ -262,19 +267,19 @@ body h2 {
   flex-direction: column;
 }
 .container-CONTENT-B h2 {
-  margin: 20px 0px;
+  margin: 50px 0px 30px 0px;
 }
-.Bsub-content {
+.Bsub-img {
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
   margin-bottom: 50px;
 }
-.Bsub-content img {
+.Bsub-img img {
   width: 100%;
 }
-.Bsub-content .imgTitle {
+.Bsub-img .imgTitle {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -284,9 +289,17 @@ body h2 {
   background-color: #D8D8D8;
 }
 @media (max-width: 2000px) {
-  .imgTitle {
+  .Bsub-img .imgTitle {
     bottom: -20px;
     right: 0px;
+    width: 33%;
+  }
+  .Bsub-img .reversed {
+    bottom: -20px;
+    left: 0px;
+  }
+  .Bsub-text {
+    margin-bottom: 50px;
   }
 }
 @media (max-width: 500px) {
@@ -301,7 +314,6 @@ body h2 {
 }
 .container-FOOTER .footer-Top {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   font-weight: normal;
   font-size: 14px;
@@ -315,7 +327,7 @@ body h2 {
   color: #ffffff;
 }
 .container-FOOTER .footer-Top input {
-  width: 98%;
+  width: 100%;
   height: 30px;
 }
 .container-FOOTER .legal {
@@ -323,8 +335,19 @@ body h2 {
   justify-content: center;
   color: #ffffff;
 }
+@media (max-width: 2000px) {
+  .footer-Top {
+    flex-direction: row;
+  }
+  .footer-Top input {
+    margin: 15px;
+  }
+}
 @media (max-width: 500px) {
-  footer {
+  .footer-Top {
     flex-direction: column;
+  }
+  .footer-Top .footer-content {
+    margin: 15px;
   }
 }

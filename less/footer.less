@@ -5,7 +5,6 @@
 
     .footer-Top {
         display: flex;
-        flex-direction: row;
         justify-content: space-between;
 
         font-weight: normal;
@@ -21,7 +20,7 @@
         }
 
         input {
-            width: 98%;
+            width: 100%;
             height: 30px;
         }
     }
@@ -35,11 +34,21 @@
 
 // -- MEDIA QUERIES -- //
 @media (max-width: 2000px) {
+    .footer-Top {
+        flex-direction: row;
 
+        input {
+            margin: 15px;
+        }
+    }
 }
 
 @media (max-width: 500px) {
-    footer {
+    .footer-Top {
         flex-direction: column;
+
+        .footer-content {
+            margin: 15px;
+        }
     }
 }
