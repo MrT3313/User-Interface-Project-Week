@@ -291,21 +291,23 @@ body h2 {
     bottom: -35px;
   }
 }
-footer {
+.container-FOOTER {
   background-color: #828282;
   display: flex;
-  font-size: 14px;
-  line-height: 26px;
-  font-weight: normal;
-  color: #ffffff;
-  padding: 10px 0px;
+  flex-direction: column;
 }
-footer h2 {
-  font-size: 20px;
-  line-height: 24px;
+.container-FOOTER .footer-Top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
-address {
-  margin: 10px 0px;
+.container-FOOTER .footer-Top input {
+  width: 98%;
+  height: 30px;
+}
+.container-FOOTER .legal {
+  display: flex;
+  justify-content: center;
 }
 @media (max-width: 500px) {
   footer {
