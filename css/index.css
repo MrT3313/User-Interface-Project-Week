@@ -261,6 +261,9 @@ body h2 {
   display: flex;
   flex-direction: column;
 }
+.container-CONTENT-B h2 {
+  margin: 20px 0px;
+}
 .Bsub-content {
   display: flex;
   flex-direction: column;
@@ -300,6 +303,16 @@ body h2 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+  color: #ffffff;
+}
+.container-FOOTER .footer-Top h2 {
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
 }
 .container-FOOTER .footer-Top input {
   width: 98%;
@@ -308,6 +321,7 @@ body h2 {
 .container-FOOTER .legal {
   display: flex;
   justify-content: center;
+  color: #ffffff;
 }
 @media (max-width: 500px) {
   footer {
