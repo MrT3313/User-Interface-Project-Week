@@ -172,29 +172,37 @@ body h2 {
 }
 .container-NAV {
   display: flex;
+}
+.container-NAV .nav {
+  display: flex;
+  flex-grow: 1;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: auto;
   font-weight: bold;
   font-size: 64px;
   line-height: 75px;
   background-color: #828282;
 }
-.container-NAV .nav-contentLeft h2 {
+.container-NAV .nav .nav-contentLeft h2 {
   color: #ffffff;
 }
-.container-NAV .nav-contentRight {
+.container-NAV .nav .nav-contentRight {
   display: flex;
   align-items: center;
 }
+.showFULLmenu {
+  background-color: #828282;
+  height: 100vh;
+  align-items: flex-start;
+}
 @media (max-width: 2000px) {
-  .container-NAV {
+  .nav {
     padding: 0px 70px;
   }
 }
 @media (max-width: 500px) {
-  .container-NAV {
+  .nav {
     padding: 0px 15px;
   }
 }

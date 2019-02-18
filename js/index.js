@@ -3,27 +3,28 @@
     
 // Select Whole Nav
     const nav = document.querySelector('.container-NAV')
+// Select Sub Nav
+    const subNav = document.querySelector('.nav')
 
 // -- LOGISTICS -- //
-    let counter = 0
-    console.log(counter)
+    // let counter = 0
+    // console.log(counter)
 
 // Add Event Listener -- CLOSED MENU
     menuBUTTON.addEventListener('click', () => {
         console.log('you clicked the menu button')
-        if (counter % 2 === 0) {
-            nav.style.height = '100vh'
-            nav.style.width = '100vw'
-            nav.style.opacity = '.5'
-            ++counter
-        } 
+        // nav.style.height = '100vh'
+        nav.classList.toggle('showFULLmenu')
+        event.stopPropagation()
+
+        
     })
 
-// Add Event Listener - OPEN MENU
     nav.addEventListener('click', () => {
-        console.log('you have clicked the NAV')
-        if (counter % 2 !== 0) {
-            nav.style.height = 'auto'
-            ++counter
-        }
+        // nav.style.height = 'auto'
+        nav.classList.toggle('showFULLmenu')
     })
+
+
+
+
