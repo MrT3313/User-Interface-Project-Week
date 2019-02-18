@@ -5,7 +5,7 @@
     const nav = document.querySelector('.container-NAV')
 
 // Select Expanded Menu
-    const expandedMenu = document.querySelector('.nav-expandedMenu')
+    const menu = document.querySelector('.menu')
 
 // -- LOGISTICS -- //
     // let counter = 0
@@ -14,7 +14,8 @@
 // Add Event Listener -- CLOSED MENU
     menuBUTTON.addEventListener('click', () => {
         console.log('you clicked the menu button')
-        nav.classList.toggle('showFULLmenu')
+        // nav.classList.toggle('showFULLmenu')
+        menu.classList.toggle('ON')
         event.stopPropagation()
         
     })
