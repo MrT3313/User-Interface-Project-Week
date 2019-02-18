@@ -191,11 +191,6 @@ body h2 {
   display: flex;
   align-items: center;
 }
-.showFULLmenu {
-  background-color: #828282;
-  height: 100vh;
-  align-items: flex-start;
-}
 @media (max-width: 2000px) {
   .nav {
     padding: 0px 70px;

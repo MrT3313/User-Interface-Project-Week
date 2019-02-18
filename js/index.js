@@ -3,8 +3,9 @@
     
 // Select Whole Nav
     const nav = document.querySelector('.container-NAV')
-// Select Sub Nav
-    const subNav = document.querySelector('.nav')
+
+// Select Expanded Menu
+    const expandedMenu = document.querySelector('.nav-expandedMenu')
 
 // -- LOGISTICS -- //
     // let counter = 0
@@ -13,16 +14,16 @@
 // Add Event Listener -- CLOSED MENU
     menuBUTTON.addEventListener('click', () => {
         console.log('you clicked the menu button')
-        // nav.style.height = '100vh'
         nav.classList.toggle('showFULLmenu')
         event.stopPropagation()
-
         
     })
 
     nav.addEventListener('click', () => {
         // nav.style.height = 'auto'
-        nav.classList.toggle('showFULLmenu')
+        nav.classList.toggle('showFULLmenu')  
+        
+        
     })
 
 
