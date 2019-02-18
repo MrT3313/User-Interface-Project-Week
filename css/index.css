@@ -398,3 +398,31 @@ body h2 {
     border-radius: 5px;
   }
 }
+.container-servicesINTRO {
+  margin-top: 40px;
+}
+.container-servicesBUTTONS {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.container-servicesBUTTONS .button {
+  padding: 10px;
+  border: 1px solid black;
+}
+.servicesContentA {
+  margin-top: 40px;
+}
+@media (max-width: 500px) {
+  .container-servicesBUTTONS {
+    display: flex;
+    flex-direction: column;
+  }
+  .container-servicesBUTTONS .button {
+    margin-bottom: 15px;
+  }
+  .servicesContentA {
+    flex-direction: column;
+  }
+}

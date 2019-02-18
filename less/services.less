@@ -1,0 +1,41 @@
+
+.container-servicesINTRO {
+    margin-top: 40px;
+}
+
+.container-servicesBUTTONS {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 40px;
+
+    .button {
+        padding: 10px;
+        border: 1px solid black;
+    }
+}
+
+.servicesContentA {
+    margin-top: 40px;
+}
+
+
+// -- MEDIA QUERIES -- //
+@media (max-width: 2000px) {
+
+}
+
+
+@media (max-width: 500px) {
+    .container-servicesBUTTONS {
+        display: flex;
+        flex-direction: column;
+        .button {
+            margin-bottom: 15px;
+        }
+    }
+
+    .servicesContentA {
+        flex-direction: column;
+    }
+}
