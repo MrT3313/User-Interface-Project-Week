@@ -20,7 +20,10 @@
     flex-direction: row;
     
     .content {
-        display: flex;
+        display: none;
+        flex-grow: 1;
+        justify-content: space-between;
+        align-items: space-between;
 
         .contentText {
             display: flex;
@@ -28,6 +31,15 @@
             align-items: center;
             justify-content: space-around;
         }
+
+        img {
+            display: flex;
+        }
+    }
+
+    .content[data-option='1'] {
+        display: flex;
+        // background-color: orange;
     }
 }
 

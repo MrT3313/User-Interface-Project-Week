@@ -1,4 +1,63 @@
-// RESTART
+// // RESTART
+
+// let buttons = document.querySelectorAll('.button')
+//     console.log(buttons)
+
+// let cards = document.querySelectorAll('.content')
+//     console.log(cards)
+
+// buttons.addEventListener('click', () => {
+//     console.log('you clicked me')
+// })
+
+//*NEW BUTTON LINK*
+class buttonLink {
+    constructor (button) {
+        // this is a SPECIFIC button being passed in
+        this.button = button
+            console.log(button)
+
+        // get SPECIFIC button DATA ATTRIBUTE
+        this.buttonData = button.dataset.number
+            console.log(this.buttonData)
+        
+        button.addEventListener('click', () => {
+            this.cards = document.querySelectorAll('.content').forEach( card => {
+                // if (card.dataset.option === this.buttonData) {
+                //     card.style.display = 'flex'
+                // } else {
+                    if (card.dataset.option === this.buttonData) {
+                        card.style.display = 'flex'
+                        console.log(card)
+                    } else {
+                        card.style.display = 'none'
+                    }
+                // }
+            })
+        })
+        // select all cards & dispolay none content
+
+
+        // this.cards = Array.from(this.cards).map( card => new buttonContentLink(card))
+
+        
+
+
+
+
+    }
+}
+
+
+// // Select all BUTTONS
+
+
+let servicesContentButtons = document.querySelectorAll('.button').forEach( button => new buttonLink(button))
+
+// Select Buttons
+
+
+// Add Event Listener On Buttons
 
 
 
@@ -12,7 +71,7 @@
 //             console.log(this.data)
         
 //         // Using the custom data attribute get the associated paragraph
-//         this.itemElement = document.querySelector(`.paragraph[data-paragraph="${this.data}"]`)
+//         this.itemElement = document.querySelector(.paragraph[data-paragraph="${this.data}"])
 //             console.log(this.itemElement)
 
 //         // using this.itemElement make a NEW selectedButton_DISPLAY
@@ -47,5 +106,4 @@
 
 // }
 
-// // Select all BUTTONS
-//     let servicesContentButtons = document.querySelectorAll('.button').forEach( button => new buttonLink(button))
+// 

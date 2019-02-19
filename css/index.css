@@ -441,13 +441,22 @@ body h2 {
   flex-direction: row;
 }
 .container-servicesContent .content {
-  display: flex;
+  display: none;
+  flex-grow: 1;
+  justify-content: space-between;
+  align-items: space-between;
 }
 .container-servicesContent .content .contentText {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+}
+.container-servicesContent .content img {
+  display: flex;
+}
+.container-servicesContent .content[data-option='1'] {
+  display: flex;
 }
 @media (max-width: 500px) {
   .container-servicesBUTTONS {
