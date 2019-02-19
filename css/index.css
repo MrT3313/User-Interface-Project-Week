@@ -439,9 +439,13 @@ body h2 {
 .container-servicesContent {
   display: flex;
   flex-direction: row;
+  margin: 20px 0px;
+}
+.container-servicesContent .content.OFF {
+  display: none;
 }
 .container-servicesContent .content {
-  display: none;
+  display: flex;
   flex-grow: 1;
   justify-content: space-between;
   align-items: space-between;
@@ -449,8 +453,11 @@ body h2 {
 .container-servicesContent .content .contentText {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-around;
+}
+.container-servicesContent .content .contentText h2 {
+  margin: 10px 0px;
 }
 .container-servicesContent .content img {
   display: flex;
@@ -466,7 +473,7 @@ body h2 {
   .container-servicesBUTTONS .button {
     margin-bottom: 15px;
   }
-  .servicesContentA {
+  .content {
     flex-direction: column;
   }
 }

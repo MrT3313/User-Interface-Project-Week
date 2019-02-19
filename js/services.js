@@ -26,15 +26,19 @@ class buttonLink {
                 // if (card.dataset.option === this.buttonData) {
                 //     card.style.display = 'flex'
                 // } else {
-                    if (card.dataset.option === this.buttonData) {
-                        card.style.display = 'flex'
-                        console.log(card)
-                    } else {
+                    if (card.dataset.option !== this.buttonData) {
                         card.style.display = 'none'
+                        
+                    } else {
+                        card.style.display = 'flex'
+                        card.classList.remove('OFF')
+
+                        console.log(card)
                     }
                 // }
             })
         })
+
         // select all cards & dispolay none content
 
 
