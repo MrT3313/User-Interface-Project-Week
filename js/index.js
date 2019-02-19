@@ -14,17 +14,19 @@
 // Add Event Listener -- CLOSED MENU
     menuBUTTON.addEventListener('click', () => {
         console.log('you clicked the menu button')
-        // nav.classList.toggle('showFULLmenu')
+
         menu.classList.toggle('ON')
         event.stopPropagation()
+        
+
+        
         
     })
 
     nav.addEventListener('click', () => {
-        // nav.style.height = 'auto'
-        nav.classList.toggle('showFULLmenu')  
+        console.log('you clicked the NAV')
         
-        
+        menu.classList.toggle('ON') 
     })
 
 
