@@ -15,25 +15,18 @@
     }
 }
 
-.servicesContentA {
-    margin-top: 40px;
+.container-servicesContent {
+    display: flex;
+    flex-direction: row;
+    
+    .content {
+        display: flex;
 
-    .content-text {
-        .paragraph {
-            display: none;
-        }
-        .ON {
+        .contentText {
             display: flex;
-        }
-    }
-
-    .content-img {
-        .servicesIMG {
-            display: none;
-        }
-
-        .ON {
-            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
         }
     }
 }

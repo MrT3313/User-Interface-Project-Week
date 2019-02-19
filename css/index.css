@@ -436,20 +436,18 @@ body h2 {
   padding: 10px;
   border: 1px solid black;
 }
-.servicesContentA {
-  margin-top: 40px;
+.container-servicesContent {
+  display: flex;
+  flex-direction: row;
 }
-.servicesContentA .content-text .paragraph {
-  display: none;
-}
-.servicesContentA .content-text .ON {
+.container-servicesContent .content {
   display: flex;
 }
-.servicesContentA .content-img .servicesIMG {
-  display: none;
-}
-.servicesContentA .content-img .ON {
+.container-servicesContent .content .contentText {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
 @media (max-width: 500px) {
   .container-servicesBUTTONS {
