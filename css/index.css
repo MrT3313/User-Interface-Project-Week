@@ -439,6 +439,18 @@ body h2 {
 .servicesContentA {
   margin-top: 40px;
 }
+.servicesContentA .content-text .paragraph {
+  display: none;
+}
+.servicesContentA .content-text .ON {
+  display: flex;
+}
+.servicesContentA .content-img .servicesIMG {
+  display: none;
+}
+.servicesContentA .content-img .ON {
+  display: flex;
+}
 @media (max-width: 500px) {
   .container-servicesBUTTONS {
     display: flex;
