@@ -30,18 +30,7 @@
             menuIMG.src = "/img/nav-hamburger.png"
         }
         
-        
         event.stopPropagation()
-        
-
-        
-        
-    })
-
-    nav.addEventListener('click', () => {
-        console.log('you clicked the NAV')
-        
-        // menu.classList.toggle('ON') 
     })
 
 

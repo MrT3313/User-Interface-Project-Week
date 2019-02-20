@@ -11,67 +11,95 @@
     flex-direction: column;
 
     .Bsub-img {
+        position: relative;
+
         display: flex;
         flex-direction: column;
         align-items: center;
     
         margin-bottom: 50px;
-    
+
         img {
             width: 100%;
+            height: 300px;
         }
         
         .imgTitle {
+            position: absolute;
+            
             display: flex;
             justify-content: center;
             align-items: center;
-            position: absolute;
             
-            // height: 50px;
-    
+            height: 70px;
+            font-size: x-large;
+
             background-color: #D8D8D8;
-        } 
+        }
     }
 
     .Bsub-text {
         display: flex;
         flex-direction: column;
+        margin-bottom: 50px;
     }
 }
 
 
 @media (max-width: 2000px) {
-    .Bsub-img {
-        position: relative;
+    .imgTitle {
+        bottom: -30px;
+        right: 0px;
+        width: 40%;
+    }
+    
+    .reversed-imgTitle {
+        left: 0px;
+    }
 
-        .imgTitle {
-            font-size: x-large;
-            height: 70px;
-
-            bottom: -30px;
-            right: 0px;
-            width: 33%;
-        }
-
-        .reversed {
-            left: 0px;
-        }
-    }  
-
-    .Bsub-text {
-        margin-bottom: 50px;
-        p {
-            width: 50%;
-            margin: 0 auto;
-        }
+    p {
+        width: 50%;
+        margin: 0 auto;
     }
 }
 
 @media (max-width: 500px) {
-    .imgTitle, .reversed {
-        width: 50%;
+    .imgTitle {
         margin: 0 auto;
     }
+    
+    .reversed-imgTitle {
+        margin: 0 auto;
+    }
+
+    p {
+        width: 80%;
+    }
+
+}
+    
+    // .B-content {
+        
+    //     .Bsub-img {
+    //         position: flex;
+    //         .imgTitle {
+    //             margin: 0 auto;
+    //         }
+    //     }
+    //     .Bsub-text {
+            
+    //         p {
+    //             width: 80%;
+    //         }
+    //     }
+        
+    // }
+    
+    
+    // .imgTitle, .reversed {
+    //     width: 50%;
+    //     margin: 0 auto;
+    // }
 
     // .Bsub-img {
     //     // .imgTitle, .imgTitle.reversed {
@@ -89,11 +117,11 @@
     // }
 
     // .Bsub-text {
-    //     p {
-    //         width: 90%;
-    //     }
+        // p {
+        //     width: 90%;
+        // }
     // }
-}
+
 
 
 

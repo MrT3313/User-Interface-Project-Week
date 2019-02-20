@@ -164,9 +164,6 @@ body h2 {
   .container-CONTENT-A {
     margin-bottom: 25px;
   }
-  .reversed {
-    margin-top: 25px;
-  }
 }
 @media (max-width: 500px) {
 }
@@ -323,6 +320,7 @@ body h2 {
   flex-direction: column;
 }
 .B-content .Bsub-img {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -330,45 +328,45 @@ body h2 {
 }
 .B-content .Bsub-img img {
   width: 100%;
+  height: 300px;
 }
 .B-content .Bsub-img .imgTitle {
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
+  height: 70px;
+  font-size: x-large;
   background-color: #D8D8D8;
 }
 .B-content .Bsub-text {
   display: flex;
   flex-direction: column;
+  margin-bottom: 50px;
 }
 @media (max-width: 2000px) {
-  .Bsub-img {
-    position: relative;
-  }
-  .Bsub-img .imgTitle {
-    font-size: x-large;
-    height: 70px;
+  .imgTitle {
     bottom: -30px;
     right: 0px;
-    width: 33%;
+    width: 40%;
   }
-  .Bsub-img .reversed {
+  .reversed-imgTitle {
     left: 0px;
   }
-  .Bsub-text {
-    margin-bottom: 50px;
-  }
-  .Bsub-text p {
+  p {
     width: 50%;
     margin: 0 auto;
   }
 }
 @media (max-width: 500px) {
-  .imgTitle,
-  .reversed {
-    width: 50%;
+  .imgTitle {
     margin: 0 auto;
+  }
+  .reversed-imgTitle {
+    margin: 0 auto;
+  }
+  p {
+    width: 80%;
   }
 }
 .container-FOOTER {
