@@ -15,11 +15,11 @@ class buttonLink {
     constructor (button) {
         // this is a SPECIFIC button being passed in
         this.button = button
-            console.log(button)
+            // console.log(button)
 
         // get SPECIFIC button DATA ATTRIBUTE
         this.buttonData = button.dataset.number
-            console.log(this.buttonData)
+            //console.log(this.buttonData)
         
         button.addEventListener('click', () => {
             this.cards = document.querySelectorAll('.content').forEach( card => {
