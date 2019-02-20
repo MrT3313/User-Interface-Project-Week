@@ -348,7 +348,7 @@ body h2 {
   .imgTitle {
     bottom: -30px;
     right: 0px;
-    width: 40%;
+    width: 50%;
   }
   .reversed-imgTitle {
     left: 0px;
@@ -360,10 +360,11 @@ body h2 {
 }
 @media (max-width: 500px) {
   .imgTitle {
-    margin: 0 auto;
+    width: 90%;
+    right: auto;
   }
   .reversed-imgTitle {
-    margin: 0 auto;
+    left: auto;
   }
   p {
     width: 80%;
