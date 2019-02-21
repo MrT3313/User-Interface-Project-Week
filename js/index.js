@@ -19,20 +19,25 @@
         console.log('you clicked the menu button')
         // Change Menu Icon
         menu.classList.toggle('ON')
+
         if (menu.classList.contains('ON')) {
             console.log('true')
             menuIMG.src = "/img/nav-hamburger-close.png"
+            
+            window.addEventListener('wheel', preventDefaultFunction)
         } else {
             console.log('false')
             menuIMG.src = "/img/nav-hamburger.png"
+
+            window.removeEventListener('wheel', preventDefaultFunction)
         }
         
         event.stopPropagation()
     })
-    
-    window.addEventListener('wheel', event => {
+
+    function preventDefaultFunction(event) {
         event.preventDefault();
-    })
+    }
 
 
 
