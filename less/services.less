@@ -30,6 +30,12 @@
         justify-content: space-between;
         align-items: space-between;
 
+        .servicesIMG {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
         .contentText {
             display: flex;
             flex-direction: column;
@@ -37,6 +43,11 @@
             justify-content: space-around;
 
             h2 {
+                margin: 10px 0px;
+            }
+
+            p { 
+                width: 80%;
                 margin: 10px 0px;
             }
         }
@@ -55,11 +66,46 @@
 
 // -- MEDIA QUERIES -- //
 @media (max-width: 2000px) {
+    // -- IMAGES -- //
+    .content {
+        .servicesIMG {
+            .desktop {
+                display: flex;
 
+                img {
+                    display: flex;
+                }
+            }
+        
+            .mobile {
+                display: none;
+            }
+        }
+    }
+    // -- ** -- ** -- // 
 }
 
 
 @media (max-width: 500px) {
+    .content {
+        .servicesIMG {
+            .desktop {
+                display: none;
+            }
+        
+            .mobile {
+                display: flex;
+                
+
+                img {
+                    display: flex;
+                    width: 100%;
+                }
+            }
+        }
+    }
+    // -- ** -- ** -- // 
+
     .container-servicesBUTTONS {
         display: flex;
         flex-direction: column;
