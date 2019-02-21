@@ -18,9 +18,6 @@
     menuBUTTON.addEventListener('click', () => {
         console.log('you clicked the menu button')
         // Change Menu Icon
-        console.log(menuIMG)
-        console.log(menuIMG.src)
-
         menu.classList.toggle('ON')
         if (menu.classList.contains('ON')) {
             console.log('true')
@@ -31,6 +28,10 @@
         }
         
         event.stopPropagation()
+    })
+    
+    window.addEventListener('wheel', event => {
+        event.preventDefault();
     })
 
 
