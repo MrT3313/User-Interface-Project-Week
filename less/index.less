@@ -58,3 +58,92 @@ table{
 }
 
 /* Your Code Goes Here */
+// ** -- ** -- ** -- ** // 
+// ** -- ** -- ** -- ** // 
+
+body {
+  color: #222222;
+  font-family: Roboto, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+
+  h2 {
+    font-weight: bold;
+    font-size: 28px;
+    color: #222222;
+  }
+}
+
+.container-SUB {
+  display: flex;
+  flex-direction: column;
+  
+  width: 90%;
+  margin: 0 auto;
+
+  margin-top: 50px;
+}
+
+.container-CONTENT-A {
+  justify-content: center;
+  align-items: center;
+
+}
+
+.reversed-contentA {
+  flex-direction: row-reverse;
+}
+
+// --MEDIA QUERIES-- //
+@media (max-width: 2000px) {
+  // body {
+  //   background-color: blue;
+  // }
+  .content-img {
+    .desktop {
+      display: flex;
+      
+    }
+  
+    .mobile {
+      display: none;
+    }
+  }
+  
+
+  .container-MAIN {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .container-CONTENT-A {
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 500px) {
+  // body {
+  //   background-color: red;
+  // }
+  .content-img {
+    .desktop {
+      display: none;
+    }
+  
+    .mobile {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  
+}
+
+// --IMPORT LESS FILES-- //
+@import "nav.less";
+@import "overlayMenu.less";
+@import "header.less";
+@import "contentA.less";
+@import "contentB.less";
+@import "footer.less";
+@import "services.less";

@@ -1,0 +1,123 @@
+
+.container-servicesINTRO {
+    margin-top: 40px;
+}
+
+.container-servicesBUTTONS {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 40px;
+
+    .button {
+        padding: 10px;
+        border: 1px solid black;
+    }
+}
+
+.container-servicesContent {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0px;
+    
+    .content.OFF {
+        display: none;
+    }
+
+    .content {
+        display: flex;
+        flex-grow: 1;
+        justify-content: space-between;
+        align-items: space-between;
+
+        .servicesIMG {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .contentText {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-around;
+
+            h2 {
+                margin: 10px 0px;
+            }
+
+            p { 
+                width: 80%;
+                margin: 10px 0px;
+            }
+        }
+
+        img {
+            margin: auto;
+        }
+    };
+
+    .content[data-option='1'] {
+        display: flex;
+    }
+
+}
+
+
+// -- MEDIA QUERIES -- //
+@media (max-width: 2000px) {
+    // -- IMAGES -- //
+    .content {
+        // height: 450px;
+
+        .servicesIMG {
+            .desktop {
+                display: flex;
+
+                img {
+                    display: flex;
+                }
+            }
+        
+            .mobile {
+                display: none;
+            }
+        }
+    }
+    // -- ** -- ** -- // 
+}
+
+
+@media (max-width: 500px) {
+    .content {
+        // height: 750px;
+        .servicesIMG {
+            .desktop {
+                display: none;
+            }
+        
+            .mobile {
+                display: flex;
+                
+
+                img {
+                    display: flex;
+                    width: 100%;
+                }
+            }
+        }
+    }
+    // -- ** -- ** -- // 
+
+    .container-servicesBUTTONS {
+        display: flex;
+        flex-direction: column;
+        .button {
+            margin-bottom: 15px;
+        }
+    }
+
+    .content {
+        flex-direction: column;
+    }
+}

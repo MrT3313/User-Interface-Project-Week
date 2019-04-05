@@ -38,16 +38,16 @@ Background: #828282
 - Font Size: 28px
 - Color: #222222
    
-### Footer Headings
-- Font Weight: Regular
-- Font Size: 20px
-- Line Height: 24px
-- Color: #FFFFFF
-
 ### Footer Text
 - Font Weight: Regular
 - Font Size: 14px
 - Line Height: 26px
+- Color: #FFFFFF
+
+### Footer Headings
+- Font Weight: Regular
+- Font Size: 20px
+- Line Height: 24px
 - Color: #FFFFFF
 
 ### Navigation Logo
